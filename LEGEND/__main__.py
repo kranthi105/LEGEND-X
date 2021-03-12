@@ -68,8 +68,6 @@ PM_START_TEXT = """
 Hello there, I'm [LÊGÉÑD X](https://telegra.ph/file/7dd4f3f246fad2772db33.jpg)
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
-
-✪ Make sure you read *INFO* Section Below ✪ 
 """
 
 buttons = [
