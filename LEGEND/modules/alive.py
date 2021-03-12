@@ -1,11 +1,11 @@
-# COPYRIGHT (C) 2021 BY LEGENDX22 AND PROBOYX
+# COPYRIGHT (C) 2021 BY SR9981395097
 
 """
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
-                 MADE BY LEGENDX AND PROBOY
+                 MADE BY SR9981395097
                    CREDITS #TEAMLEGEND 
                 PLEASE DON'T REMOVE CREDITS
 """
@@ -15,18 +15,18 @@ import re, os
 from LEGEND.events import register
 from LEGEND import telethn as tbot
 from LEGEND import telethn as tgbot
-PHOTO = "https://telegra.ph/file/b068fc8dc8d9be627bf85.jpg"
+PHOTO = "https://telegra.ph/file/1e2dba38b542431a81d9f.jpg"
 @register(pattern=("/alive"))
 async def awake(event):
   legendx = event.sender.first_name
-  LEGENDX = "HELLO THIS IS GRAND OFFICIAL \n\n"
+  LEGENDX = "HELLO THIS IS LÊGÉÑDX10 \n\n"
   LEGENDX += "ALL SYSTEM WORKING PROPERLY\n\n"
   LEGENDX += "GRAND OS : 3.8 LATEST\n\n"
   LEGENDX += f"MY MASTER {legendx} ☺️\n\n"
   LEGENDX += "FULLY UPDATED\n\n"
   LEGENDX += "TELETHON : 1.19.5 LATEST\n\n"
   LEGENDX += "THANKS FOR ADD ME HERE"
-  BUTTON = [[Button.url("MASTER", "https://t.me/LEGENDX22"), Button.url("DEVLOPER", "https://t.me/proboyx")]]
+  BUTTON = [[Button.url("MASTER", "https://t.me/SR9981395097"), Button.url("DEVLOPER", "https://t.me/SR9981395097")]]
   BUTTON += [[custom.Button.inline("REPOSITORYS", data="LEGENDX")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=LEGENDX,  buttons=BUTTON)
 
@@ -45,21 +45,6 @@ async def callback_query_handler(event):
   await event.edit(text=f"ALL DETAILS OF REPOS", buttons=PROBOYX)
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"PROBOY")))
-async def callback_query_handler(event):
-  global PHOTO
-  legendx = event.sender.first_name
-# inline by LEGENDX22 and PROBOY22 🔥
-  LEGENDX = "HELLO THIS IS GRAND OFFICIAL \n\n"
-  LEGENDX += "ALL SYSTEM WORKING PROPERLY\n\n"
-  LEGENDX += "GRAND OS : 3.8 LATEST\n\n"
-  LEGENDX += f"MY MASTER {legendx} ☺️\n\n"
-  LEGENDX += "FULLY UPDATED BOT\n\n"
-  LEGENDX += "TELETHON : 1.19.5 LATEST\n\n"
-  LEGENDX += "THANKS FOR ADD ME HERE"
-  BUTTONS = [[Button.url("MASTER", "https://t.me/LEGENDX22"), Button.url("DEVLOPER", "https://t.me/proboyx")]]
-  BUTTONS += [[custom.Button.inline("REPOSITORYS", data="LEGENDX")]]
-  await event.edit(text=LEGENDX, buttons=BUTTONS)
 
 
 @register(pattern=("/repo|/REPO"))
